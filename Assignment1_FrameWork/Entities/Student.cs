@@ -23,8 +23,8 @@ namespace Assignment1_FrameWork.Entities
         public string Address { get; set; }
 
         [Range(18,27)]
-        public int Age { get; set; }
-        public int DeptId { get; set; }
+        public int? Age { get; set; }
+        public int? DeptId { get; set; }
 
 
 

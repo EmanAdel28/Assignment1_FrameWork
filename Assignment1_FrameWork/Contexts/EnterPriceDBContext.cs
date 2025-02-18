@@ -12,7 +12,7 @@ namespace Assignment1_FrameWork.Contexts
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server = . ; Database = ITIDatabase ; Trusted Connection = true ;TrustServerCertificate =true");
+            optionsBuilder.UseSqlServer("Server = . ; Database = ITIDatabase ; Trusted_Connection = true ;TrustServerCertificate =true");
         }
 
         public DbSet<Student> Students { get; set; }
