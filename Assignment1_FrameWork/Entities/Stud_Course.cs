@@ -9,7 +9,9 @@ namespace Assignment1_FrameWork.Entities
 {
     internal class Stud_Course
     {
+        
         public int stud_ID { get; set; }
+        
         public int Course_ID { get; set; }
 
         [Range(0,4)]
