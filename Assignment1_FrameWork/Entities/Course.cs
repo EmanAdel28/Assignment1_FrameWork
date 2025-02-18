@@ -20,6 +20,6 @@ namespace Assignment1_FrameWork.Entities
         [Required]
         [Range(20, 40)]
         public int Duration { get; set; }
-        public int Top_ID { get; set; }
+        public int? Top_ID { get; set; }
     }
 }

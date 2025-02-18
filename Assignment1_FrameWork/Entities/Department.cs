@@ -15,7 +15,7 @@ namespace Assignment1_FrameWork.Entities
         [MaxLength(15)]
         [Required]
         public string Name { get; set; }
-        public int Ins_ID { get; set; }
+        public int? Ins_ID { get; set; }
 
         [Required]
         public DateTime HiringDate { get; set; }
