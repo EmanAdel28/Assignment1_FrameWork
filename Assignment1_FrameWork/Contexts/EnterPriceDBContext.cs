@@ -22,13 +22,20 @@ namespace Assignment1_FrameWork.Contexts
         public DbSet<Department> Departments { get; set; }
         public DbSet<Topic> Topics { get; set; }
         public DbSet<Stud_Course> Stud_Course { get; set; }
+       
+
+        public DbSet<Course_Inst> Course_Inst { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // Composite Primary Key Configuration
             modelBuilder.Entity<Stud_Course>()
                 .HasKey(sc => new { sc.stud_ID, sc.Course_ID });
+            modelBuilder.Entity<Course_Inst>()
+               .HasKey(sc => new { sc.inst_ID, sc.Course_ID });
 
             base.OnModelCreating(modelBuilder);
         }
+
     }
 }
