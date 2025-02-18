@@ -19,5 +19,6 @@ namespace Assignment1_FrameWork.Contexts
         public DbSet<Course> Courses { get; set; }
 
         public DbSet<Instructor> Instructors { get; set; }
+        public DbSet<Department> Departments { get; set; }
     }
 }
